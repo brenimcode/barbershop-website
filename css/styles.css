@@ -1,0 +1,220 @@
+@charset "UTF-8";
+  
+/* --PALETA DE CORES-- */
+:root {
+    --cor0: #fff8e1; /* Fundo claro */
+    --cor1: #ffd700; /* Dourado */
+    --cor2: #ffbf00; /* Dourado escuro */
+    --cor3: #b8860b; /* Ouro velho */
+    --cor4: #8b4513; /* Marrom escuro */
+    --cor5: #4b2e0f; /* Marrom bem escuro */
+
+    --fonte-padrao: 'Georgia', serif;
+    --fonte-destaque: 'Garamond', serif;
+    --fonte-android: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+    overflow-x: hidden; /* Evita barra de rolagem horizontal */
+}
+
+a.externo::after {
+    content: '\00A0\1F517';
+}
+
+main p {
+    margin: 15px 0;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1.001em;
+    line-height: 2em;
+}
+main strong {
+    color: var(--cor4);
+    font-weight: bold;
+}
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 5.5px;
+}
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-height: 30px; /* Altura menor */
+    text-align: center;
+    padding: 10px; /* Menor espaçamento interno */
+}
+
+header > h1 {
+    color: white;
+    margin-bottom: 1px;
+    font-size: 2em;
+    font-weight: normal;
+    font-family: var(--fonte-destaque);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+header > p {
+    font-family: var(--fonte-padrao);
+    color: white;
+    font-size: 1.2em;
+    max-width: 500px;
+    margin: auto;
+}
+
+nav {
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+nav > a {
+    color: var(--cor1);
+    padding: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.20s;
+}
+nav > a:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
+}
+
+main {
+    background-color: #fff4d1;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgb(105, 105, 105);
+    margin-bottom: 30px;
+}
+main h1 {
+    color: var(--cor5);
+    font-family: var(--fonte-android);
+    font-weight: normal;
+    font-size: 1.8em;
+}
+main h2 {
+    color: var(--cor4);
+    font-size: 1.3em;
+    font-family: var(--fonte-android);
+    text-indent: 8px;
+    font-weight: normal;
+}
+main img {
+    width: 50%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+    width: 100%; /* Largura total */
+    position: relative; /* Posição relativa para não ser fixo */
+    margin-top: 30px; /* Espaçamento acima do rodapé */
+}
+
+/* Estilos para a seção de contato */
+#contact {
+    text-align: center;
+    margin-top: 30px;
+    background-color: var(--cor2); /* Cor de fundo dourado escuro */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+#contact h2 {
+    color: var(--cor5);
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+#contact p {
+    color: var(--cor5);
+    font-size: 1.2em;
+}
+#contact a {
+    color: var(--cor5);
+    text-decoration: none;
+    font-weight: bold;
+}
+#contact a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+.socials-button {
+    background-color: var(--cor2);
+    display: inline-block;
+    margin: 10px;
+    width: 10vw;  /* Define a largura do botão como 10% da largura da viewport */
+    height: 10vw;  /* Define a altura do botão como 10% da largura da viewport */
+    max-width: 50px;  /* Define a largura máxima do botão */
+    max-height: 50px;  /* Define a altura máxima do botão */
+    border: none;
+    overflow: hidden;  /* Esconde partes da imagem que excedem o tamanho do botão */
+    
+
+}
+
+.socials-button img {
+    width: 100%;  /* Faz a imagem preencher a largura do botão */
+    height: 100%;  /* Faz a imagem preencher a altura do botão */
+}
+
+/* Ajustes adicionais para telas menores */
+@media (max-width: 600px) {
+    .socials-button {
+        width: 15vw;  /* Aumenta a largura do botão em telas menores */
+        height: 15vw;  /* Aumenta a altura do botão em telas menores */
+        max-width: 40px;  /* Define uma largura máxima menor */
+        max-height: 40px;  /* Define uma altura máxima menor */
+    }
+    #contact {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
+}
+
+iframe {
+    width: 50%; /* Largura total */
+    height: 300px; /* Altura fixa para o iframe */
+    border: none; /* Remove a borda padrão do iframe */
+}
