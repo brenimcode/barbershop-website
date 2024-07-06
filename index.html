@@ -1,51 +1,463 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barbearia Cavalcante</title>
-    <link rel="shortcut icon" href="images/favicon.ico" type="images/x-icon">
-    <link rel="stylesheet" href="css/styles.css">
+   <!-- Basic -->
+   <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <!-- Mobile Metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+   <!-- Site Metas -->
+   <meta name="keywords" content="barbearia, cortes de cabelo, barba, serviços de barbearia, sobrancelha" />
+   <meta name="description" content="Barbearia Cavalcante - A melhor escolha para cortes de cabelo e serviços de barbearia de qualidade." />
+   <meta name="author" content="Brenimcode" />
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+  <title>Barbearia Cavalcante</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
 </head>
 
 <body>
-<header>
-    <h1>BARBEARIA CAVALCANTE</h1>
-</header>
-<nav>
-    <a href="/barbershop-website/about.html">SOBRE</a>
-    <a href="/barbershop-website/gallery.html">GALERIA</a>
-    <a href="/barbershop-website/contact.html">CONTATOS</a>
-    <a href="https://maps.app.goo.gl/Dy6519rE8U5yntGb6">LOCALIZAÇÃO</a>
-</nav>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <div class="hero_bg_box">
+      <div class="img-box">
+        <img src="images/hero-bg.jpg" alt="">
+      </div>
+    </div>
 
-<main>
-    <h1>Bem-vindo à Barbearia Cavalcante</h1>
-    <img src="images/foto1.jpg" alt="Foto da Barbearia Cavalcante">
-    <img src="images/foto2.jpg" alt="Foto da Barbearia Cavalcante">
-    <p>Somos especializados em cortes de cabelo masculino e barba. Venha conhecer nossos serviços de qualidade!</p>
-    <p>O homem moderno também cuida da sua aparência e a nossa barbearia é o melhor lugar para fazer isso!</p>
-    
-    <section id="map-container">
-        <h2>Localização</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.867611814614!2d-48.27034859155661!3d-18.981453282129486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a45b65cf91fe3b%3A0x4bec68b11224d141!2sBarberia%20Cavalcante!5e0!3m2!1spt-BR!2sbr!4v1718911701239!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <header class="header_section">
+      <div class="header_top">
+        <div class="container-fluid">
+          <div class="contact_link-container">
+            <a href="https://maps.app.goo.gl/Dy6519rE8U5yntGb6" class="contact_link1">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                Localização
+              </span>
+            </a>
+
+            <a href="https://wa.me/3493149684" class="contact_link2">
+              <i class="fa fa-whatsapp" aria-hidden="true"></i>
+              <span>+34 9314-9684</span>
+            </a>
+
+            <a href="https://www.instagram.com/cavalcantebarbshop/" class="contact_link3">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+              <span>
+                @cavalcantebarbshop
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand" href="index.html">
+              <span>
+                Barbearia Cavalcante
+              </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""></span>
+            </button>
+
+            <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"> Sobre</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="services.html"> Cortes </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contatos</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- end header section -->
+
+    <!-- slider section -->
+    <section class=" slider_section ">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="detail-box">
+                    <h1>
+                      Voce mais bonito<br>
+                      <span>
+                        É com nois!
+                      </span>
+                    </h1>
+                    <p>
+                      Venha conhecer a Barbearia Cavalcante!
+                    </p>
+                    <div class="btn-box">
+                      <a href="services.html" class="btn-1"> Ver serviços</a>
+                      <a href="https://wa.me/3493149684" class="btn-2"> Fale conosco </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="detail-box">
+                    <h1>
+                      Deixa seu estilo <br>
+                      <span>
+                        Nas nossas mãos!
+                      </span>
+                    </h1>
+                    <p>
+                      Vem pra Barbearia Cavalcante, a gente deixa você na régua!
+                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn-1"> Ver serviços</a>
+                      <a href="" class="btn-2"> Fale conosco </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="detail-box">
+                    <h1>
+                      Estilo e<br>
+                      <span>
+                        Parceria!
+                      </span>
+                    </h1>
+                    <p>
+                      Chega mais na Barbearia Cavalcante, o corte perfeito e barba alinhada te espera!
+                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn-1"> Ver serviços</a>
+                      <a href="" class="btn-2"> Fale conosco </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container idicator_container">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+        </div>
+      </div>
     </section>
-    
-    <section id="contact">
-        <h2>Contatos</h2>
-        
-        <a href="https://wa.me/553491912323" class="socials-button">
-            <img src="images/whatsapp.svg" alt="WhatsApp">
-        </a>
-        <a href="https://www.instagram.com" class="socials-button">
-            <img src="images/instagram.svg" alt="Instagram">
-        </a>
-    </section>
-</main>
+    <!-- end slider section -->
+  </div>
 
-<footer>
-    <p>&copy; 2024 Barbearia Cavalcante. Todos os direitos reservados.</p>
-</footer>
+  <!-- about section -->
 
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 px-0">
+          <div class="img_container">
+            <div class="img-box">
+              <img src="images/about-img.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 px-0">
+          <div class="detail-box">
+            <div class="heading_container ">
+              <h2>
+                Quem somos
+              </h2>
+            </div>
+            <p>
+              A Barbearia Cavalcante oferece serviços de alta qualidade em um ambiente acolhedor e profissional, sendo a escolha preferida para homens que 
+              valorizam estilo e bem-estar.
+            </p>
+            <div class="btn-box">
+              <a href="about.html">
+                Saiba mais
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+  <!-- service section -->
+
+  <section class="service_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Nossos serviços
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="box ">
+            <div class="img-box">
+              
+              <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.44623 8.03189C9.79809 7.43639 10 6.74178 10 6C10 3.79086 8.20914 2 6 2C3.79086 2 2 3.79086 2 6C2 8.20914 3.79086 10 6 10C6.74184 10 7.43651 9.79805 8.03204 9.44614L10.5859 12L8.03204 14.5539C7.43651 14.2019 6.74184 14 6 14C3.79086 14 2 15.7909 2 18C2 20.2091 3.79086 22 6 22C8.20914 22 10 20.2091 10 18C10 17.2582 9.79809 16.5636 9.44622 15.9681L20.7072 4.70711C21.0977 4.31658 21.0977 3.68342 20.7072 3.29289C20.3167 2.90237 19.6835 2.90237 19.293 3.29289L12.0001 10.5858L9.44623 8.03189ZM6 4C4.89543 4 4 4.89543 4 6C4 7.10457 4.89543 8 6 8C6.53462 8 7.02025 7.79023 7.37907 7.44851C7.39004 7.43643 7.40135 7.42455 7.41301 7.41289C7.42466 7.40124 7.43652 7.38994 7.44859 7.37899C7.79026 7.02018 8 6.53458 8 6C8 4.89543 7.10457 4 6 4ZM6 16C4.89543 16 4 16.8954 4 18C4 19.1046 4.89543 20 6 20C7.10457 20 8 19.1046 8 18C8 17.4654 7.79025 16.9798 7.44855 16.621C7.4365 16.61 7.42465 16.5987 7.41301 16.5871C7.40136 16.5755 7.39006 16.5636 7.3791 16.5515C7.02028 16.2098 6.53464 16 6 16Z" fill="#000000"/>
+                <path d="M14.2929 14.2929C14.6834 13.9024 15.3166 13.9024 15.7071 14.2929L20.7071 19.2929C21.0976 19.6834 21.0976 20.3166 20.7071 20.7071C20.3166 21.0976 19.6834 21.0976 19.2929 20.7071L14.2929 15.7071C13.9024 15.3166 13.9024 14.6834 14.2929 14.2929Z" fill="#000000"/>
+                </svg>
+            
+            </div>
+            <div class="detail-box">
+              <h6>
+                Cabelo
+              </h6>
+              <p>
+                Cortes de cabelo modernos e tradicionais, para todos os estilos.
+              </p>
+              <a href="">
+                Saiba mais
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="box ">
+            <div class="img-box">
+              <svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800px" height="800px" viewBox="0 0 378.302 378.302" xml:space="preserve">
+                <g>
+                  <path d="M342.792,60.397C292.954,129.216,202.264,196.99,77.634,262.966c5.979-13.148,10.702-23.227,13.884-27.594
+                    c11.011-15.203,33.408-58.257,33.408-58.257s11.8,8.215,13.405,4.426c1.576-3.801,68.346-162.727,68.346-162.727
+                    s-31.481-35.136-42.738-9.376c-7.421,17.014-73.723,168.804-117.851,269.817c-8.513,4.273-17.131,8.582-25.924,12.856
+                    c-9.873,4.333-4.77,15.157,10.69,22c-14.549,33.338-24.224,55.489-24.224,55.489s-0.298,11.082,7.701,8.232
+                    c13.557-16.161,26.162-37.893,37.244-59.623c83.743-7.334,306.337-188.078,317.734-204.758
+                    C381.046,96.321,345.326,43.325,342.792,60.397z M64.526,299.013c-2.615,2.452-6.731,2.301-9.166-0.292
+                    c-2.452-2.616-2.312-6.726,0.298-9.179c2.615-2.451,6.72-2.312,9.172,0.305C67.265,292.45,67.137,296.572,64.526,299.013z"/>
+                </g>
+              </svg>
+              
+              
+              
+            </div>
+            <div class="detail-box">
+              <h6>
+                Sobrancelha
+              </h6>
+              <p>
+                Design de sobrancelhas para realçar seu olhar e sua beleza.
+              </p>
+              <a href="">
+                Saiba mais
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="box ">
+            <div class="img-box">
+              <svg width="800px" height="800px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#000000" d="M319 35.375c-27.305-.247-52.415 19.47-62.063 46.094-9.726-26.856-35.196-46.656-62.78-46.064-15.11.325-30.85 6.764-45 21.532-11.47 11.968-17.863 27.782-24.407 43.75-15 22.49-35.066 39.27-64.156 45.874 7 6.374 14.63 9.69 22.656 11.063-14.192 7.828-33.583 12.154-61.28 10.78 20.528 26.327 52.643 35.282 86.28 34.532 60.716-2.34 91.448-33.326 109.438-64.875l16.218 9.25c-20.387 35.754-59.15 71.513-127.28 74.094-.002.24 0 .48 0 .72 0 6.067 1.32 13.4 3.686 21.686l-.25-.468 29.5 114.875 4.625-38.626c17.095 31.46 37.67 64.792 56.532 93.97l1.624-46.127c5.83 38.514 20.68 73.426 39.062 106.97 9.337 13.507 15.25 21.78 15.25 21.78s6.953-9.693 17.875-25.562c.07-.1.152-.213.22-.313 20.76-32.818 38.056-67.256 46.438-105.906l-1.063 37.438c9.342-14.666 18.923-30.088 28.156-45.656v28.468l40.533-104.125c9.877-21.585 16.512-40.562 17.656-54.342-65.713-7.917-111.206-41.86-132.314-78.875l16.22-9.25c19.702 34.552 66.54 68.93 138.312 71.062 15.085-.3 29.905-3.623 45.593-11.313-14.823.118-27.478-1.08-38.53-3.437 23.34-5.136 43.576-16.795 56.125-37.97-102.54 21.26-90.343-61.02-127.188-99.468-14.37-14.994-30.37-21.424-45.687-21.562z"/>
+              </svg>
+              
+            </div>
+            <div class="detail-box">
+              <h6>
+                Barba
+              </h6>
+              <p>
+                Barba feita com precisão e estilo, realçando seu visual.
+              </p>
+              <a href="">
+                Saiba mais
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end service section -->
+
+  <!-- hair cuts section -->
+  
+  <section class="hair_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Cortes
+        </h2>
+        <p>
+          Confira alguns dos nossos estilos de corte de cabelo masculino:
+        </p>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 mx-auto ">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/t1.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Corte Americano
+              </h5>
+              <h6 class="">
+                descriçao e preço
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mx-auto ">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/t2.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Corte Social
+              </h5>
+              <h6 class="">
+                descriçao e preço
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 mx-auto ">
+          <div class="box">
+            <div class="img-box">
+              <img src="images/t3.jpg" alt="">
+            </div>
+            <div class="detail-box">
+              <h5>
+                Corte Degradê
+              </h5>
+              <h6 class="">
+                descriçao e preço
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btn-box">
+        <a href="">
+          Ver mais
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- end hair cuts section -->
+
+  <!-- info section -->
+  <section class="info_section ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="info_logo">
+            <a class="navbar-brand" href="index.html">
+              <span>
+                Barbearia Cavalcante
+              </span>
+            </a>
+            <p>
+               A melhor escolha para cortes de cabelo e serviços de barbearia de qualidade.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_links">
+            <h5>
+              Links
+            </h5>
+            <ul>
+              <li>
+                <a href="about.html">
+                  Saiba mais
+                </a>
+              </li>
+              <li>
+                <a href="services.html">
+                  Serviços
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_info">
+            <h5>
+              Contatos
+            </h5>
+          </div>
+          <div class="info_contact">
+            <a href="https://maps.app.goo.gl/Dy6519rE8U5yntGb6">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              <span>
+                Localização
+              </span>
+            </a>
+            <a href="https://wa.me/3493149684">
+              <i class="fa fa-whatsapp" aria-hidden="true"></i>
+              <span>
+                Whatsapp : 3493149684
+              </span>
+            </a>
+            <a href="https://www.instagram.com/cavalcantebarbshop/">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+              <span>
+                @cavalcantebarbshop
+              </span>
+            </a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info_section -->
+
+  <!-- footer section -->
+  <footer class="container-fluid footer_section">
+    <p>
+      &copy; <span id="currentYear"></span> All Rights Reserved. Design by
+      <a href="https://github.com/brenimcode">Brenimcode</a>
+    </p>
+  </footer>
+  <!-- footer section -->
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/custom.js"></script>
 </body>
+
 </html>
