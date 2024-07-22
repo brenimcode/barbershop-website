@@ -389,7 +389,7 @@ a:focus {
   display: inline-block;
   padding: 10px 35px;
   background-color: #f1db25;
-  color: #ffffff;
+  color: #000000;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border: 1px solid transparent;
